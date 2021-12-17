@@ -20,18 +20,17 @@ public class Ejercicio03 {
         int elementosArribaMedia = 0;
         int elementosAbajoMedia = 0;
         double suma = 0;
-        double contador = 0;
         double media;
         int arreglo1;
-        int elemento;
+      
 
         for (int i = 0; i < arreglo.length; i++) {
             suma = suma + arreglo[i];
-            contador = contador + 1;
+            
 
         }
 
-        media = suma / contador;
+        media = suma / arreglo.length;
 
         for (int i = 0; i < arreglo.length; i++) {
             arreglo1 = arreglo[i];
@@ -46,7 +45,7 @@ public class Ejercicio03 {
             }
         }
 
-        System.out.printf("Hay %d elementos arriba de la \n"
+        System.out.printf("Hay %d elementos arriba de la mediagit  \n"
                 + "Hay %d elemtos abajo de la media",
                  elementosArribaMedia, elementosAbajoMedia);
 
