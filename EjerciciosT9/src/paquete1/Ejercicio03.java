@@ -45,7 +45,7 @@ public class Ejercicio03 {
             }
         }
 
-        System.out.printf("Hay %d elementos arriba de la mediagit  \n"
+        System.out.printf("Hay %d elementos arriba de la media \n"
                 + "Hay %d elemtos abajo de la media",
                  elementosArribaMedia, elementosAbajoMedia);
 
