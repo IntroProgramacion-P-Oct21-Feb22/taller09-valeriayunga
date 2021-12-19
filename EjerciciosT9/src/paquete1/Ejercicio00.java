@@ -35,6 +35,7 @@ public class Ejercicio00 {
             promedio = sumaNotas / 2;
             // se asigna a la posición i del arreglo promediosFinales
             promediosFinales[i] = promedio;
+            
         }
 
         for (int i = 0; i < promediosMateria1.length; i++) {
