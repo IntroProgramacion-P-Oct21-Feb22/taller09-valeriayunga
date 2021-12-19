@@ -27,27 +27,31 @@ public class Ejercicio05 {
             "Teresa", "Luis", "Mark", "Jennifer",
             "Alcides"};
         String inicial;
-        boolean bandera =true;
-        while(bandera){
+        boolean bandera = true;
+        char[] inicialLetra = new char[7];
+
         for (int i = 0; i < estudiantes.length; i++) {
-            System.out.println("Ingrese una letra");
+            inicialLetra[i] = estudiantes[i].charAt(0);
+
+        }
+
+        while (bandera) {
+
+          
+
+            for (int i = 0; i < estudiantes.length; i++) {
+                System.out.println("Ingrese una letra");
             inicial = entrada.nextLine();
 
-            char inicialLetra = inicial.charAt(0);
+                if (inicial.equals(inicialLetra[i])) {
 
-            if (inicial.charAt(i) == 'k'
-                    || inicial.charAt(i) == 'h'
-                    || inicial.charAt(i) == 't'
-                    || inicial.charAt(i) == 'l'
-                    || inicial.charAt(i) == 'm'
-                    || inicial.charAt(i) == 'j'
-                    || inicial.charAt(i) == 'a') {
-                i = i + 10;
-                bandera = false;
+                    bandera = false;
+                }
+
             }
 
         }
-        }
+
     }
 
 }
